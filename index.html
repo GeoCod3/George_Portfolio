@@ -130,7 +130,7 @@
 
     <!-- Contact Section -->
     <div class="contact_container" id="contact">
-        <form>
+        <form onsubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH <br>作成中</h3>
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="email id" required>
@@ -139,7 +139,20 @@
             <button type="submit">Send</button>
         </form>
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "ciobanugeorgepetrut@yahoo.com",
+                Password : "2489AA7A226CFE5459ACFBB0EEF6BB891ADF",
+                To : 'ciobanugeorgepetrut21@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+                }).then(message => alert(message));
+                }
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

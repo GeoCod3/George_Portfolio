@@ -16,7 +16,7 @@ menuIcon.addEventListener('click', mobileMenu);
 
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active')
-    if(window.innerWidth <= 768 && menuBars){
+    if(window.innerWidth <= 960 && menuBars){
         menuIcon.classList.toggle('is-active')
         menu.classList.remove('active')
     }
