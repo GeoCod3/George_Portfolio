@@ -7,12 +7,15 @@
     , initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- NavBar Section -->
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="#home" id="navbar_logo"><img src="images/echo.png" width="150" height="70" alt=""></a>
+            <a href="#home" id="navbar_logo">CGP.Design</a>
             <!-- hamburger menu icon -->
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -40,9 +43,9 @@
     <!-- Hero Section  Introduction-->
     <div class="hero" id="home">
         <div class="hero_container">
-            <img src="images/geo2.jpg" width="170" height="200" alt="profilePic" class="hero_image">
-            <h1 class="hero_heading"> Under Development <br>作成中</h1>
-            <p class="hero_description">3D Designer / Coder</p>
+            <img src="images/geo2.jpg" width="140" height="170" alt="profilePic" class="hero_image">
+            <h1 class="hero_heading">Hi, I'm George Ciobanu </h1>
+            <p class="hero_description">3D Designer and recently Coder</p>
             <button class="main_btn"><a href="#about">Dive in</a></button>
         </div>
     </div>
@@ -53,11 +56,11 @@
             <div class="main-content">
                 <h1> <em> About me</em> </h1>
                 <p>This wonderful journey in the 3D design world started several years ago from when I was a high school
-                    student, in my technical design subject class, where I was studying AutoCad AutoDesk 2000 software,
-                    mainly doing 3D design of various components using blueprint of each component. <br>
+                    student, in my technical design subject class, where I was studying AutoCad AutoDesk 2008 software,
+                    mainly doing 3D design of various components using blueprint of each component.
                     In 2019 after a long break from the world of 3D design, I decided to challenge myself once again,
                     discovering Blender 3D software and started to learn mainly hard surface modeling, like voxel art and
-                    environmental components. Once a subject in school, became a true passion for design! <br>
+                    environmental components. Once a subject in school, became a true passion for design!
                     But my interest in design didn't stop there, and I started studying Front-end development, 
                     web design using mainly HTML, CSS, JS.
                 </p>
@@ -153,6 +156,20 @@
                 }).then(message => alert(message));
                 }
     </script>
+    <!--  until here contact section -->
+
+    <!-- foooter section -->
+    <div class="footer_container">
+        <section class="social_media">
+            <div class="social_media-wrapper">
+                <div class="footer_logo">
+                    <a href="/" id="footer_logo">CGP.Design</a>
+                </div>
+                <p class="website_rights">© All rights reserved 2022.</p>
+                <p id="last">  Build with ❤ by<a href="#home">CGP</a></p>
+            </div>
+        </section>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

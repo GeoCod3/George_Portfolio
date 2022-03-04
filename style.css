@@ -33,9 +33,8 @@
 
 /* Logo section */
 #navbar_logo {
-    /* font-weight: bold;
-    background-color: rgb(135, 163, 222);
-    background-image: linear-gradient(45deg,white , #8400ff, #460441);
+    font-weight: bold;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -45,8 +44,8 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold; */
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-top: 5px;
 }
 
@@ -121,6 +120,7 @@
 
     #navbar_logo {
         padding-left: 25px;
+        font-size: 1.5rem;
     }
 /*            navbar_toggle -> mobile menu icon   */
 
@@ -175,14 +175,14 @@
 /*                            hero Section */
 
 .hero_image{
-    margin-bottom: 2rem;
-    border-radius: 100px;
+    margin-bottom: 4rem;
+    border-radius: 70px 0 ;
 }
 
 .hero {
     background: #000000;
     background: linear-gradient(to right, #313030, #000000);
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 .hero_container {
@@ -192,29 +192,42 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 90%;
+    height: 100vh;
     text-align: center;
     padding: 30px;
 }
 
-.hero_heading {
-    font-size: 50px;
+.underwork{
+    font-size: 20px;
     margin-bottom: 24px;
-    color: white;
+    color: rgb(235, 22, 22);
     text-shadow: 0 0 30px blue;
 }
 
-.hero_description {
-    /* setting Liniar gradient  */
-    font-weight: bold;
-    font-size: 60px;
-    background-color: rgb(135, 163, 222);
-    background-image: linear-gradient(45deg,white , #8400ff, #460441);
+.hero_heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: 24px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.hero_description {
+    /* setting Liniar gradient  */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 30px blue;
 }
 
 .highlight {
@@ -229,7 +242,7 @@
     background-image: linear-gradient(45deg,white , #8400ff, #460441);
     padding: 20px 40px;
     border: none;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 50px 0;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -253,7 +266,7 @@
     height: 100%;
     background: #e03a9e;
     transition: all 0.35s ease;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 50px 0;
 }
 
 .main_btn:hover {
@@ -267,18 +280,23 @@
 /* Media Query section */
 @media screen and (max-width: 768px) {
     .hero_heading {
-        font-size: 40px;
-    }
-
-    .hero_description {
         font-size: 30px;
     }
 
+    .hero_description {
+        font-size: 25px;
+    }
+
     .hero_image{
-        margin-bottom: 2rem;
-        border-radius: 100px;
-        width: 150px;
-        height: 180px;
+        margin-bottom: 3rem;
+        border-radius: 60px 0;
+        width: 120px;
+        height: 150px;
+    }
+
+    .main_btn{
+        font-size: 1rem;
+        padding: 20px 40px;
     }
 }
 
@@ -288,7 +306,7 @@
 
 .main {
     background-color: #131313;
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .main_container {
@@ -297,7 +315,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 90%;
+    height: 100vh;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -352,6 +370,10 @@
 /*  Responsive for About me section */
 @media screen and (max-width: 920px) {
 
+    .main {
+        padding: 6rem 0;
+    }
+
     .img_container {
         margin-left: 0%;
     }
@@ -369,6 +391,7 @@
         justify-content: center;
         margin: 0 auto;
         width: 100%;
+        height: 90%;
     }
 
     .main-content p{
@@ -519,15 +542,12 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     justify-items: center;
     text-align: center;
     color: white;
-    padding: 50px;
+    padding: 100px;
+    height: 100vh;
 }
 
 .skills_container h1{
-    margin-bottom: 30px;
-}
-
-.skills_container h2{
-    margin-bottom: 20px;
+    margin-bottom: 0%;
 }
 
 .icons{
@@ -536,7 +556,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 }
 
 .icon_items{
-    margin: 30px;
+    margin: 20px;
     border-radius: 30px;
 }
 
@@ -603,4 +623,46 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+/*                           footer section */
+
+.footer_container{
+    background-color: black;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#footer_logo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#last a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+/*                      responsive footer */
+
+@media screen and (max-width: 420px) {
+
 }
