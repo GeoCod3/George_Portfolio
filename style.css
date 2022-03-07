@@ -199,9 +199,53 @@
 }
 
 .intro{
-    border-right: 5px solid rgb(205, 230, 245);
-    padding-right: 20px;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.hero_description1 {
+    border-right: #00f2fe 3px solid;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    height: 80px;
+    padding-right: 30px;
+    font-size: 30px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.hero_description2 {
+    border-left: #00f2fe 3px solid;
+    height: 80px;
+    text-align: left;
+    padding-left: 30px ;
+    position: relative;
+    top: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.hero_firstH {
+    font-family: 'Abril Fatface', cursive;
+    text-decoration:overline;
+    font-size: 35px;
+    margin-bottom: 24px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .hero_heading {
@@ -215,17 +259,7 @@
     -moz-text-fill-color: transparent;
 }
 
-.hero_description {
-    /* setting Liniar gradient  */
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
-    font-size: 30px;
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
+
 
 .highlight {
     border-bottom: 4px solid  #8400ff ;
@@ -259,7 +293,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #e03a9e;
+    background: #3a3de0;
     transition: all 0.35s ease;
     border-radius: 50px 0;
 }
@@ -275,8 +309,12 @@
 /* Media Query section */
 @media screen and (max-width: 768px) {
 
-    ..hero_container{
-        height: 30%;
+    .hero_firstH {
+        font-size: 25px;
+    }
+
+    .hero_container{
+        height: 100vh;
     }
 
     .hero_heading {
@@ -400,15 +438,11 @@
     }
 
     .main-content h1{
-        font-size: 1.3rem;
-        text-align: center;
-        text-decoration: underline rgb(226, 43, 134);
+        font-size: 1.5rem;
     }
 
     .main-content h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        text-decoration: underline rgb(87, 8, 190);
+        font-size: 1.5rem;
     }
 }
 
