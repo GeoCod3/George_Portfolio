@@ -207,8 +207,7 @@
 }
 
 .hero_description1 {
-    border-right: #00f2fe 3px solid;
-    font-family: 'Dancing Script', cursive;
+    border-right: #accbee 5px solid;
     font-weight: bold;
     height: 80px;
     padding-right: 30px;
@@ -220,13 +219,11 @@
     -moz-text-fill-color: transparent;
 }
 .hero_description2 {
-    border-left: #00f2fe 3px solid;
+    border-left:  #accbee 5px solid;
     height: 80px;
-    text-align: left;
-    padding-left: 30px ;
+    padding-left: 0% ;
     position: relative;
-    top: 30px;
-    font-family: 'Dancing Script', cursive;
+    top: 40px;
     font-weight: bold;
     font-size: 30px;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
