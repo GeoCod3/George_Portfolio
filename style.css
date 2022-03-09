@@ -176,8 +176,7 @@
 
 .hero_image{
     margin-bottom: 2rem;
-    border-radius: 70px ;
-    box-shadow: 0 0 10px rgb(175, 136, 219);
+    border-radius: 70px 70px 0 0;
 }
 
 .hero {
@@ -324,7 +323,7 @@
 
     .hero_image{
         margin-bottom: 3rem;
-        border-radius: 60px;
+        border-radius: 70px 70px 0 0;
         width: 120px;
         height: 150px;
     }
@@ -601,7 +600,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 /*  Responsive section for Skills  */
 @media screen and (max-width: 720px) {
     .icons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
     }
