@@ -443,6 +443,22 @@
     }
 }
 
+/*  responsive for about in mobile rez */
+@media screen and (max-width: 420px){
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, #576774 0%, #596164 100%);
+        border-radius: 7px;
+        margin: 0 auto;
+        padding: 40px;
+        width: 80%;
+        height: 50%;
+    }
+}
+
 /*                                 Projects section */
 
 .projects {
@@ -692,10 +708,4 @@ form button{
     margin-left: 5px;
     text-decoration: none;
     color: lightskyblue;
-}
-
-/*                      responsive footer */
-
-@media screen and (max-width: 420px) {
-
 }
