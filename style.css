@@ -430,7 +430,7 @@
     }
 
     .main-content p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 30px;
     }
 
@@ -443,21 +443,6 @@
     }
 }
 
-/*  responsive for about in mobile rez */
-@media screen and (max-width: 420px){
-    .main_container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        background-image: linear-gradient(to right, #576774 0%, #596164 100%);
-        border-radius: 7px;
-        margin: 0 auto;
-        padding: 30px;
-        width: 90%;
-        height: 50%;
-    }
-}
 
 /*                                 Projects section */
 
