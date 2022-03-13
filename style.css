@@ -443,6 +443,12 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    .main_container {
+        padding: 50px;
+    }
+}
+
 
 /*                                 Projects section */
 
