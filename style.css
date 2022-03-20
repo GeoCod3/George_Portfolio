@@ -217,7 +217,9 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    opacity: 0;
 }
+
 .hero_description2 {
     border-left:  #accbee 5px solid;
     height: 80px;
@@ -231,7 +233,86 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    opacity: 0;
 }
+
+
+
+.h-apear{
+    animation: hapear 1.5s linear forwards;
+}
+
+@keyframes hapear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.slide-left{
+    animation: slideleft 1.5s linear forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        transform: translate(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.slide-right{
+    animation: slideright 1.5s linear forwards;
+}
+
+@keyframes slideright {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(-0px);
+        opacity: 1;
+    }
+}
+
+.btn-ani{
+    animation: btnani 1.5s linear forwards ;
+}
+
+@keyframes btnani {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+p.slide-left{
+    animation-delay: 1s;
+}
+
+p.slide-right{
+    animation-delay: 1.8s;
+}
+
+button.btn-ani{
+    animation-delay: 3.5s;
+}
+
+
 
 .hero_firstH {
     font-family: 'Abril Fatface', cursive;
@@ -273,7 +354,7 @@
     margin-top: 3rem;
     cursor: pointer;
     position: relative;
-    outline: none;
+    opacity: 0;
 }
 
 .main_btn a{
