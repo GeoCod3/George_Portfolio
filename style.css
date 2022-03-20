@@ -73,7 +73,8 @@
 
 /* hovering effect */
 .navbar_links:hover {
-    color: #8b29e7;
+    color: #299be7;
+    text-shadow: 0 0 10px #70afda;
     font-size: 2rem;
     transition: all 0.35s ease-in-out;
 }
@@ -258,16 +259,17 @@
 
 
 .highlight {
-    border-bottom: 4px solid  #8400ff ;
+    border-bottom: 4px solid  #289ce9 ;
 }
 
 
 /* button Dive in  */
 .main_btn {
     font-size: 1.8rem;
-    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);    padding: 20px 40px;
-    border: none;
-    border-radius: 50px 0;
+    background-color: black;
+    padding: 20px 30px;
+    border: solid 3px white;
+    border-radius: 50px 50px;
     margin-top: 3rem;
     cursor: pointer;
     position: relative;
@@ -291,7 +293,7 @@
     height: 100%;
     background: #3a3de0;
     transition: all 0.35s ease;
-    border-radius: 50px 0;
+    border-radius: 50px 50px;
 }
 
 .main_btn:hover {

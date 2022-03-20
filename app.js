@@ -24,3 +24,48 @@ const hideMobileMenu = () => {
 
 menu.addEventListener('click', hideMobileMenu);
 navbarLogo.addEventListener('click', hideMobileMenu);
+
+//  adding highlight class to the menu elements on scrolling
+
+const highlightMenu = () => {
+    const elem = document.querySelector('.highlight')
+    const home = document.querySelector('#home')
+    const aboutMenu = document.querySelector('#about-page')
+    const projectsMenu = document.querySelector('#projects-page')
+    const skillMenu = document.querySelector('#Skills-page')
+    const contactMenu = document.querySelector('#contact-page')
+    let scrollPos = window.scrollY
+
+    //  setting show point of the highlight class
+
+    if(window.innerWidth > 960 && scrollPos < 600) {
+        aboutMenu.classList.remove('highlight')
+        return
+    } else if(window.innerWidth > 960 && scrollPos < 1400) {
+        aboutMenu.classList.add('highlight')
+        projectsMenu.classList.remove('highlight')
+        return
+    } else if (window.innerWidth > 960 && scrollPos < 2345) {
+        projectsMenu.classList.add('highlight')
+        aboutMenu.classList.remove('highlight')
+        skillMenu.classList.remove('highlight')
+        return
+    } else if (window.innerWidth > 960 && scrollPos < 3100) {
+        skillMenu.classList.add('highlight')
+        projectsMenu.classList.remove('highlight')
+        contactMenu.classList.remove('highlight')
+        return
+    } else if (window.innerWidth > 960 && scrollPos < 4000) {
+        contactMenu.classList.add("highlight")
+        skillMenu.classList.remove('highlight')
+        return
+    }
+
+    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+        elem.classList.remove('highlight')
+    }
+
+}
+
+window.addEventListener('scroll', highlightMenu)
+window.addEventListener('click', highlightMenu)
