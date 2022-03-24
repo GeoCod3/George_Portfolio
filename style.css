@@ -20,6 +20,7 @@
     top: 0;
     left: 0;
     z-index: 999;
+    /* opacity: 0.4; */
 }
 
 .navbar_container {
@@ -177,11 +178,14 @@
 /*                            hero Section */
 
 .hero_image{
-    margin-bottom: 2rem;
+    z-index: 99;
+    margin-bottom: 1rem;
     border-radius: 70px 70px 70px 70px;
 }
 
 .hero {
+    position: relative;
+    display: flex;
     background: #000000;
     background: linear-gradient(to right, #313030, #000000);
 }
@@ -195,8 +199,17 @@
     margin: 0 auto;
     height: 100vh;
     text-align: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     /* border: solid 2px white; */
+}
+
+.video-cont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    object-fit: fill;
+    /* height: 700px; */
 }
 
 .intro{
@@ -306,7 +319,7 @@ p.slide-left{
 }
 
 p.slide-right{
-    animation-delay: 1.8s;
+    animation-delay: 2.2s;
 }
 
 button.btn-ani{
