@@ -197,9 +197,9 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+    height: calc(100vh - 80px);
     text-align: center;
-    /* padding: 0 20px; */
+    /* padding: 0 30px; */
     /* border: solid 2px white; */
 }
 
@@ -569,13 +569,14 @@ button.btn-ani{
 }
 
 .projects h1{
-    background-color: rgb(135, 163, 222);
+    /* background-color: rgb(135, 163, 222);
     background-image: linear-gradient(to right ,white , #8400ff, #96098a);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
+    color: white;
     margin: 3rem;
     font-size: 2.5rem;
 }
@@ -608,20 +609,13 @@ button.btn-ani{
 /*  cards gradient design */
 
 .projects_card:nth-child(1) {
-    background: #1488CC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);}
 
 .projects_card:nth-child(2) {
-    background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);}
 
 .projects_card:nth-child(3) {
-    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
-}
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);}
 
 /*  --------------------------- */
 
@@ -661,7 +655,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
-    box-shadow: 10px 10px 30px rgb(119, 0, 255);
+    box-shadow: 5px 5px 30px rgb(220, 211, 229);
 }
 
 /*  projects responsive section */

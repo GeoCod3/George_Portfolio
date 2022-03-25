@@ -41,16 +41,16 @@ const highlightMenu = () => {
     if(window.innerWidth > 960 && scrollPos < 600) {
         aboutMenu.classList.remove('highlight')
         return
-    } else if(window.innerWidth > 960 && scrollPos < 1400) {
+    } else if(window.innerWidth > 960 && scrollPos < 1200) {
         aboutMenu.classList.add('highlight')
         projectsMenu.classList.remove('highlight')
         return
-    } else if (window.innerWidth > 960 && scrollPos < 2345) {
+    } else if (window.innerWidth > 960 && scrollPos < 2045) {
         projectsMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         skillMenu.classList.remove('highlight')
         return
-    } else if (window.innerWidth > 960 && scrollPos < 3100) {
+    } else if (window.innerWidth > 960 && scrollPos < 3000) {
         skillMenu.classList.add('highlight')
         projectsMenu.classList.remove('highlight')
         contactMenu.classList.remove('highlight')
