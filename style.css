@@ -181,6 +181,7 @@
     z-index: 99;
     margin-bottom: 1rem;
     border-radius: 70px 70px 70px 70px;
+    filter: grayscale(50%);
 }
 
 .hero {
@@ -189,6 +190,23 @@
     background: #000000;
     background: linear-gradient(to right, #313030, #000000);
 }
+
+#video{
+    z-index: -1;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+    #video {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #video {
+        width: auto;
+        height: 100%;
+    }
+} */
 
 .hero_container {
     display: flex;
@@ -199,8 +217,7 @@
     margin: 0 auto;
     height: calc(100vh - 80px);
     text-align: center;
-    /* padding: 0 30px; */
-    /* border: solid 2px white; */
+    padding: 0 30px;
 }
 
 .video-cont{
@@ -209,7 +226,6 @@
     left: 0;
     opacity: 0.5;
     object-fit: fill;
-    /* height: 700px; */
 }
 
 .intro{
@@ -362,9 +378,9 @@ button.btn-ani{
 .main_btn {
     font-size: 1.8rem;
     background-color: black;
-    padding: 20px 30px;
-    border: solid 3px white;
-    border-radius: 50px 50px;
+    padding: 10px 10px;
+    border: solid 1px white;
+    border-radius: 20px 20px;
     margin-top: 3rem;
     cursor: pointer;
     position: relative;
@@ -379,20 +395,20 @@ button.btn-ani{
 }
 
 /*  btn hover effect */
-.main_btn:after {
+/* .main_btn:after {
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: #3a3de0;
+    background: #9c9ca5;
     transition: all 0.35s ease;
-    border-radius: 50px 50px;
-}
+    border-radius: 20px 20px;
+} */
 
 .main_btn:hover {
-    color: white;
+    
 }
 
 .main_btn:hover::after{
@@ -406,7 +422,7 @@ button.btn-ani{
         font-size: 25px;
     }
 
-    .hero_container{
+    #video{
         height: 100vh;
     }
 
@@ -421,14 +437,15 @@ button.btn-ani{
     .hero_image{
         margin-bottom: 3rem;
         border-radius: 70px 70px 70px 70px;
-        width: 120px;
-        height: 125px;
+        width: 130px;
+        height: 135px;
         margin-top: -5rem;
     }
 
     .main_btn{
         font-size: 1rem;
-        padding: 20px 40px;
+        padding: 10px 10px;
+        color: #000000;
     }
 }
 
