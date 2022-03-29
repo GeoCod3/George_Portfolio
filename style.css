@@ -407,16 +407,17 @@ button.btn-ani{
     border-radius: 20px 20px;
 } */
 
-.main_btn:hover {
-    
-}
 
-.main_btn:hover::after{
+/* .main_btn:hover::after{
     width: 100%;
-}
+} */
 
 /* Media Query section */
 @media screen and (max-width: 768px) {
+
+    .hero{
+        /* background-image: url("images/bgimg.jpg"); */
+    }
 
     .hero_firstH {
         font-size: 25px;
@@ -691,22 +692,27 @@ button.btn-ani{
 
 /*                                  Skills section  */
 
+#skills {
+    height: 50%;
+}
+
 .skills_container{
     display: grid;
     justify-items: center;
     text-align: center;
     color: white;
-    padding: 100px;
+    padding: 200px 100px 100px 100px;
     height: 100vh;
+    /* border: solid red 2px; */
 }
 
 .skills_container h1{
-    margin-bottom: 0%;
+    margin-bottom: -50px;
 }
 
 .icons{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 
 .icon_items{
@@ -724,12 +730,23 @@ button.btn-ani{
 /*  Responsive section for Skills  */
 @media screen and (max-width: 720px) {
     .icons {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
     }
+
+    span img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skills_container{
+        height: 150%;
+    }
+
     .skills_container h1{
-        font-size: 30px;       
+        font-size: 30px;
+        margin-bottom: 30px;       
     }
 }
 
