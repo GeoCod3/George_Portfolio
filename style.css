@@ -733,6 +733,8 @@ button.btn-ani{
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
+        margin-right: 50px;
+        /* border: solid 2px white; */
     }
 
     span img {
