@@ -510,7 +510,54 @@ button.btn-ani{
 .img_container {
     margin-left: 4rem;
     color: rgb(127, 213, 228);
+    opacity: 0;
 }
+
+.main-content {
+    opacity: 0;
+}
+
+.aboutText{
+    animation: abouttxt 1.5s linear forwards;
+}
+
+@keyframes abouttxt {
+    0%{
+        transform: translate(-30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.aboutText{
+    animation-delay: 0.5s;
+}
+
+.aboutImg{
+    animation: aboutimg 1.5s linear forwards;
+}
+
+@keyframes aboutimg {
+    0%{
+        transform: translate(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.aboutImg{
+    animation-delay: 1s;
+}
+
+
 
 
 /*  Responsive for About me section */
@@ -535,12 +582,13 @@ button.btn-ani{
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(to right, #576774 0%, #596164 100%);
+        /* background-image: linear-gradient(to right, #576774 0%, #596164 100%); */
         border-radius: 7px;
         margin: 0 auto;
         padding: 20px;
         width: 85%;
         height: 50%;
+        border-left: solid 4px #48c6ef;
     }
 
     .main-content p{
