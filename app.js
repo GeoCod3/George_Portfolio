@@ -34,7 +34,6 @@ const highlightMenu = () => {
     const projectsMenu = document.querySelector('#projects-page')
     const skillMenu = document.querySelector('#Skills-page')
     const contactMenu = document.querySelector('#contact-page')
-    const aboutImg = document.querySelector('.img_container')
     let scrollPos = window.scrollY
 
     //  setting show point of the highlight class
@@ -68,16 +67,27 @@ const highlightMenu = () => {
 
 }
 
+// Animation method
 const anime = () => {
     const aboutImg = document.querySelector('.img_container')
     const aboutText = document.querySelector('.main-content')
+    const projCard = document.querySelector('.projects_wrap')
     let scrollPos = window.scrollY
 
     if (scrollPos < 1200) {
         aboutText.classList.add('aboutText')
         aboutImg.classList.add('aboutImg')
+        return
+    }else if (scrollPos < 2045) {
+        projCard.classList.add('projAnime')
+        aboutText.classList.remove('aboutText')
+        aboutImg.classList.remove('aboutImg')
+        return
     }
 }
+
+
+
 window.addEventListener('scroll', anime)
 window.addEventListener('scroll', highlightMenu)
 window.addEventListener('click', highlightMenu)

@@ -656,6 +656,7 @@ button.btn-ani{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    opacity: 0;
 }
 
 .projects_card {
@@ -721,7 +722,28 @@ button.btn-ani{
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
-    box-shadow: 5px 5px 30px rgb(220, 211, 229);
+    box-shadow: 5px 5px 10px rgb(220, 211, 229);
+}
+
+/* cards animation */
+
+.projAnime{
+    animation: projanime 1.2s linear forwards;
+}
+
+@keyframes projanime {
+    0% {
+        transform: translate(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.projAnime{
+    animation-delay: 0.5s;
 }
 
 /*  projects responsive section */
@@ -729,6 +751,8 @@ button.btn-ani{
 @media screen and (max-width: 1300px) {
     .projects_wrap {
         grid-template-columns: 1fr 1fr;
+        border-right: #596164 solid 5px;
+        border-radius: 5px;
     }
 }
 
