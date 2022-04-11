@@ -72,6 +72,7 @@ const anime = () => {
     const aboutImg = document.querySelector('.img_container')
     const aboutText = document.querySelector('.main-content')
     const projCard = document.querySelector('.projects_wrap')
+    const icons = document.querySelector('.icons')
     let scrollPos = window.scrollY
 
     if (scrollPos < 1200) {
@@ -80,8 +81,9 @@ const anime = () => {
         return
     }else if (scrollPos < 2045) {
         projCard.classList.add('projAnime')
-        aboutText.classList.remove('aboutText')
-        aboutImg.classList.remove('aboutImg')
+        return
+    }else if (scrollPos < 3000) {
+        icons.classList.add('iconAnime')
         return
     }
 }
